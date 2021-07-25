@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/**
+ * Copyright (c) NullDev
+ */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden !important;
+    font-family: 'Lato', sans-serif;
+    background: #0e0e0e;
+}
+
+.bg {
+    background: url("../img/spawn.png") center center no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: filter 1s ease-in;
+}
+
+body.loaded .bg {
+    filter: blur(5px) brightness(0.4);
+}
+
+#pjs {
+    z-index: 100;
+}
+
+#main {
+    z-index: 10;
+}
+
+#pjs, #main {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#pjs, #main {
+    opacity: 0;
+}
+
+div.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 400px;
+    background: #000000bf;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+}
