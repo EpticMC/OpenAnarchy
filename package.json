@@ -1,0 +1,15 @@
+{
+  "name": "open-anarchy-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for OpenAnarchy.org",
+  "main": "index.html",
+  "author": "NullDev // Lz_",
+  "keywords": ["openanarchy", "open", "anarchy", "minecraft", "server", "minecraft server", "anarchy Server", "minecraft anarchy server", "no rules", "dupe enabled"],
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/eslint-parser": "^7.14.7",
+    "eslint": "^7.31.0"
+  }
+}
