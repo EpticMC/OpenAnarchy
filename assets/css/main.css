@@ -46,6 +46,7 @@ body.loaded .bg {
 
 #pjs, #main {
     opacity: 0;
+    pointer-events: none;
 }
 
 div.content {
@@ -57,9 +58,40 @@ div.content {
     width: 400px;
     background: #000000bf;
     color: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 50;
+    text-align: center;
+    padding: 2em;
     backdrop-filter: blur(10px);
+}
+
+div.content p {
+    font-size: 18px;
+}
+
+div.content > img {
+    height: 200px;
+    width: auto;
+    pointer-events: none;
+}
+
+div.content .icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.content .icons a {
+    color: #FFF;
+    font-size: 3em;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+div.content .icons a:hover {
+    color: #982702;
+}
+
+div.content .icons span {
+    position: absolute;
+    left: -9999999px;
+    visibility: hidden;
 }
