@@ -11,7 +11,7 @@
 
     fetch("https://api.mcsrvstat.us/2/openanarchy.org", { mode: "cors" })
         .then(res => res.json())
-        .then(data => $("div.center-box > .inner span#stats").text(`${data.players.online} / ${data.players.max}`));
+        .then(data => $("span#stats").text(`${data.players.online} / ${data.players.max}`));
 
     /**
      * Set workers and timeouts
