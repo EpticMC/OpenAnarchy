@@ -10,7 +10,7 @@ This is the source code for the [OpenAnarchy Website](https://openanarchy.org). 
 Website made by [NullDev](https://github.com/NullDev).
 
 > Live Site: https://openanarchy.org <br>
-Development Site: https://epticmc.github.io/OpenAnarchy/index.html
+Development Site: https://epticmc.github.io/OpenAnarchy/
 
 **Libraries:**
 - [jQuery](https://jquery.com/)
