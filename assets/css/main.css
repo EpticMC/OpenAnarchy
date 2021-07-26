@@ -56,12 +56,11 @@ div.content {
     transform: translate(-50%, -50%);
     height: 400px;
     width: 400px;
-    background: #000000bf;
     color: #FFF;
     z-index: 50;
     text-align: center;
     padding: 2em;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px) brightness(2);
 }
 
 div.content p {
