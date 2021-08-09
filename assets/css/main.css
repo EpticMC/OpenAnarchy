@@ -54,8 +54,8 @@ div.content {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 400px;
-    width: 400px;
+    min-height: 400px;
+    width: 33vw;
     color: #FFF;
     z-index: 50;
     text-align: center;
@@ -64,14 +64,72 @@ div.content {
     border-radius: 30px;
 }
 
-div.content p {
-    font-size: 18px;
+div.content > .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-div.content > img {
-    height: 200px;
+div.content > .heading > img {
+    height: 150px;
     width: auto;
     pointer-events: none;
+    margin-right: 15px;
+}
+
+div.content > .heading > h1 {
+    font-size: 2.5em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-left: 15px;
+    text-align: left;
+}
+
+div.content h2 {
+    font-weight: normal;
+    font-size: 1.5em;
+    text-align: justify;
+    text-align-last: center;
+}
+
+div.content p {
+    font-size: 1.2em;
+    margin-bottom: 1.4em;
+}
+
+div.content ul {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 1.2em;
+    width: auto;
+    display: inline-block;
+    list-style: none;
+}
+
+div.content ul span.spacer {
+    display: inline-block;
+    text-align: right;
+    width: 5.5em;
+}
+
+div.content ul a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+div.content ul a:hover {
+    color: #ff6f39;
+    text-decoration: none;
+}
+
+div.content ul a i {
+    margin-left: 6px;
 }
 
 div.content .icons {
@@ -87,11 +145,66 @@ div.content .icons a {
 }
 
 div.content .icons a:hover {
-    color: #982702;
+    color: #ff6f39;
 }
 
 div.content .icons span {
     position: absolute;
     left: -9999999px;
     visibility: hidden;
+}
+
+div.credits {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #b3b3b3;
+    z-index: 99999;
+}
+
+div.credits > a {
+    color: #FFF;
+    font-weight: bold;
+    transition: all .5s ease;
+    text-decoration: none;
+}
+
+div.credits > a:hover {
+    color: #b3b3b3;
+}
+
+@media (max-width: 1590px) {
+    div.content {
+        width: 42vw;
+    }
+}
+
+@media (max-width: 1310px) {
+    div.content {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 965px) {
+    div.content {
+        width: 62vw;
+    }
+}
+
+@media (max-width: 760px) {
+    div.content {
+        width: 85vw;
+    }
+
+    div.content h2 {
+        font-size: 1.3em;
+    }
+
+    div.content > .heading > img {
+        height: 120px;
+    }
+
+    div.content > .heading > h1 {
+        font-size: 2.1em;
+    }
 }
