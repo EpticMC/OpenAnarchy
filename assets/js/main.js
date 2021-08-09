@@ -4,6 +4,8 @@
 // = Copyright (c) NullDev = //
 // ========================= //
 
+/* eslint-disable no-alert */
+
 (($, pJS) => {
     // Greeter
     const ARG = ["color:blue;font-weight:bold;font-size:24px", "color:red;font-weight:bold;font-size:24px", "color:blue;font-weight:bold;font-size:24px", "color:green;font-weight:bold;font-size:24px"];
@@ -35,9 +37,24 @@
         window.initFlames();
     };
 
+    /**
+     * Copy to clipboard
+     *
+     * @param {Event} e
+     */
+    let copyToClipboard = function(e){
+        navigator.clipboard.writeText(
+            $(e.target).text()
+        ).then(
+            () => alert("IP saved to clipboard!"),
+            () => alert("Couldn't save IP to clipboard...")
+        );
+    };
+
     $(document).ready(() => {
         workers();
         particles();
+        $("a.clip-exec").on("click", e => copyToClipboard(e));
     });
 
 // @ts-ignore
