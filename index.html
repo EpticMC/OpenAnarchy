@@ -40,7 +40,7 @@
         <!-- // =  https://nulldev.org  = // -->
         <!-- // ========================= // -->
 
-        <!-- Source Code:                            --> 
+        <!-- Source Code:                          --> 
         <!-- http://github.com/EpticMC/OpenAnarchy -->
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
@@ -50,11 +50,26 @@
         <div class="bg"></div>
         <div id="pjs"></div>
         <canvas id="main"></canvas>
-
         <div class="content">
-            <img src="./favicon.png" alt="OpenAnarchy">
-            <h1>OpenAnarchy</h1>
-            <p>IP: openanarchy.org - <span id="stats">0 / 0</span> Players</p>
+            <div class="heading">
+                <img src="./favicon.png" alt="OpenAnarchy">
+                <!-- <h1>&Oslash;pen<br>&Lambda;narchy</h1> -->
+                <h1>Open<br>Anarchy</h1>
+            </div>
+            <h2>
+                OpenAnarchy is a cracked anarchy server running on 1.16.5 BungeeCord Spigot software, with a really fast growing peak. Just like other typical anarchy servers, OpenAnarchy has no rules, no staff, and no "kid friendly" chat filters.
+            </h2>
+            <hr>
+            <p>OpenAnarchy is playable on Java and Bedrock!</p>
+            <ul>
+                <li>
+                    <span class="spacer">Java IP: </span> <a class="clip-exec" href="#">openanarchy.org <i class="fa fa-clipboard"></i></a> 
+                </li>
+                <li>
+                    <span class="spacer">Bedrock IP: </span> <a class="clip-exec" href="#">bedrock.openanarchy.org:19132 <i class="fa fa-clipboard"></i></a>
+                </li>
+            </ul>  
+            <p>Status: <span id="stats">0 / 0</span> Players</p>
             <div class="icons">
                 <a href="https://discord.gg/Rf9whBF7FX" target="_blank" rel="noopener">
                     <span>Discord</span>
@@ -66,7 +81,7 @@
                 </a>
             </div>
         </div>
-
+        <div class="credits">Website by <a target="_blank" rel="noopener" href="https://nulldev.org">NullDev</a></div>
         <script src="./assets/libs/jquery-3.6.0.min.js"></script>
         <script src="./assets/libs/particles.min.js"></script>
         <script src="./assets/js/pjs-conf.js"></script>
