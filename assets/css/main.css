@@ -10,7 +10,7 @@ body {
     margin: 0;
     overflow: hidden !important;
     font-family: 'Lato', sans-serif;
-    background: #0e0e0e;
+    background: #0E0E0E;
 }
 
 .bg {
@@ -49,6 +49,18 @@ body.loaded .bg {
     pointer-events: none;
 }
 
+.z1, .z2 {
+    position: relative;
+}
+
+.z1 {
+    z-index: 1;
+}
+
+.z2 {
+    z-index: 2;
+}
+
 div.content {
     position: absolute;
     top: 50%;
@@ -70,7 +82,7 @@ div.content > .heading {
     align-items: center;
 }
 
-div.content > .heading > img {
+div.content > .heading img {
     height: 150px;
     width: auto;
     pointer-events: none;
@@ -124,7 +136,7 @@ div.content ul a {
 }
 
 div.content ul a:hover {
-    color: #ff6f39;
+    color: #FF6F39;
     text-decoration: none;
 }
 
@@ -145,7 +157,7 @@ div.content .icons a {
 }
 
 div.content .icons a:hover {
-    color: #ff6f39;
+    color: #FF6F39;
 }
 
 div.content .icons span {
@@ -158,7 +170,7 @@ div.credits {
     position: absolute;
     top: 5px;
     right: 5px;
-    color: #b3b3b3;
+    color: #B3B3B3;
     z-index: 99999;
 }
 
@@ -170,7 +182,109 @@ div.credits > a {
 }
 
 div.credits > a:hover {
-    color: #b3b3b3;
+    color: #B3B3B3;
+}
+
+span.highlight {
+    color: #FF6F39;
+}
+
+.fire {
+    animation: animation 1s ease-in-out infinite alternate;
+    -moz-animation: animation 1s ease-in-out infinite alternate;
+    -webkit-animation: animation 1s ease-in-out infinite alternate;
+    -o-animation: animation 1s ease-in-out infinite alternate;
+}
+  
+.burn {
+    animation: animation .65s ease-in-out infinite alternate;
+    -moz-animation: animation .65s ease-in-out infinite alternate;
+    -webkit-animation: animation .65s ease-in-out infinite alternate;
+    -o-animation: animation .65s ease-in-out infinite alternate;
+}
+  
+@keyframes animation {
+    0% {
+        text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #feec85,
+            -20px -20px 40px #ffae34,
+            20px -40px 50px #ec760c,
+            -20px -60px 60px #cd4606,
+            0 -80px 70px #973716,
+            10px -90px 80px #451b0e;
+    }
+    100% {
+        text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #fefcc9,
+            -20px -20px 40px #feec85,
+            22px -42px 60px #ffae34,
+            -22px -58px 50px #ec760c,
+            0 -82px 80px #cd4606,
+            10px -90px 80px  #973716;
+    }
+}
+  
+@-moz-keyframes animation {
+    0% {
+        text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #feec85,
+            -20px -20px 40px #ffae34,
+            20px -40px 50px #ec760c,
+            -20px -60px 60px #cd4606,
+            0 -80px 70px #973716,
+            10px -90px 80px #451b0e;
+    }
+    100% {
+        text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #fefcc9,
+            -20px -20px 40px #feec85,
+            22px -42px 60px #ffae34,
+            -22px -58px 50px #ec760c,
+            0 -82px 80px #cd4606,
+            10px -90px 80px  #973716;
+    }
+}
+  
+@-webkit-keyframes animation {
+    0% {
+        text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #feec85,
+            -20px -20px 40px #ffae34,
+            20px -40px 50px #ec760c,
+            -20px -60px 60px #cd4606,
+            0 -80px 70px #973716,
+            10px -90px 80px #451b0e;
+    }
+    100% {
+        text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #fefcc9,
+            -20px -20px 40px #feec85,
+            22px -42px 60px #ffae34,
+            -22px -58px 50px #ec760c,
+            0 -82px 80px #cd4606,
+            10px -90px 80px  #973716;
+    }
+}
+  
+@-o-keyframes animation {
+    0% {
+        text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #feec85,
+            -20px -20px 40px #ffae34,
+            20px -40px 50px #ec760c,
+            -20px -60px 60px #cd4606,
+            0 -80px 70px #973716,
+            10px -90px 80px #451b0e;
+    }
+    100% {
+        text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #fefcc9,
+            -20px -20px 40px #feec85,
+            22px -42px 60px #ffae34,
+            -22px -58px 50px #ec760c,
+            0 -82px 80px #cd4606,
+            10px -90px 80px  #973716;
+    }
 }
 
 @media (max-width: 1590px) {
