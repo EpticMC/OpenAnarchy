@@ -46,8 +46,8 @@
         navigator.clipboard.writeText(
             $(e.target).text()
         ).then(
-            () => alert("IP saved to clipboard!"),
-            () => alert("Couldn't save IP to clipboard...")
+            () => $(e.target).find("span.clip-stat").hide().text("Copied!").fadeIn(400).delay(1500).fadeOut(400),
+            () => $(e.target).find("span.clip-stat").hide().text("Couldn't copy...").fadeIn(400).delay(1500).fadeOut(400)
         );
     };
 
