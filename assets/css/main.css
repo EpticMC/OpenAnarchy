@@ -72,8 +72,15 @@ div.content {
     z-index: 50;
     text-align: center;
     padding: 2em;
-    backdrop-filter: blur(50px) brightness(1.9);
+    background: rgba(0, 0, 0, .6);
     border-radius: 30px;
+}
+
+@supports ((-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))) {
+    div.content {
+        backdrop-filter: blur(50px) brightness(1.9);
+        background: transparent !important;
+    }
 }
 
 div.content > .heading {
@@ -112,35 +119,19 @@ div.content p {
     margin-bottom: 1.4em;
 }
 
-div.content ul {
-    padding: 0;
-    margin: 0;
-    text-align: left;
-    font-size: 1.2em;
-    width: auto;
-    display: inline-block;
-    list-style: none;
-}
-
-div.content ul span.spacer {
-    display: inline-block;
-    text-align: right;
-    width: 5.5em;
-}
-
-div.content ul a {
+div.content p a {
     text-decoration: none;
     color: #FFF;
     font-weight: bold;
     transition: all .5s ease;
 }
 
-div.content ul a:hover {
+div.content p a:hover {
     color: #FF6F39;
     text-decoration: none;
 }
 
-div.content ul a i {
+div.content p a i {
     margin-left: 6px;
 }
 
@@ -187,6 +178,11 @@ div.credits > a:hover {
 
 span.highlight {
     color: #FF6F39;
+}
+
+a.clip-exec > span.clip-stat,
+a.clip-exec:hover > span.clip-stat {
+    color: #FFF;
 }
 
 .fire {
